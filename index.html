@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayesha Hori — Creator Portfolio</title>
+  <meta name="description" content="Ayesha Hori — Karachi-based lifestyle, food, fashion and UGC creator available for Pakistani and international brand collaborations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171514;--muted:#746d67;--paper:#f8f5f0;--cream:#eee8df;--line:#ded7ce;--accent:#9a6d4d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(248,245,240,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(222,215,206,.7)}
+    nav .inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;letter-spacing:.14em;font-size:14px}.navlinks{display:flex;gap:28px;font-size:13px;color:#514b46}
+    .navlinks a:hover{color:var(--accent)}
+    .hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:70px;padding:70px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700;color:var(--accent)}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(62px,9vw,118px);line-height:.86;font-weight:500;margin:18px 0 28px;letter-spacing:-.055em}
+    .hero p{font-size:18px;line-height:1.65;max-width:590px;color:#5d5751;margin:0 0 32px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 21px;border:1px solid var(--ink);font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:9px;transition:.2s}
+    .btn.dark{background:var(--ink);color:white}.btn:hover{transform:translateY(-2px)}
+    .hero-card{position:relative;min-height:620px;background:linear-gradient(145deg,#ded3c7,#b69a82 55%,#6f5747);overflow:hidden}
+    .hero-card:before{content:"";position:absolute;inset:8%;border:1px solid rgba(255,255,255,.55)}
+    .hero-card .portrait-note{position:absolute;bottom:28px;left:28px;right:28px;color:white}
+    .portrait-note strong{display:block;font-family:"Playfair Display",serif;font-size:34px;font-weight:500}.portrait-note span{font-size:12px;opacity:.9}
+    section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+    .section-head h2{font-family:"Playfair Display",serif;font-size:54px;line-height:1;margin:0;font-weight:500;letter-spacing:-.035em}
+    .section-head p{max-width:420px;color:var(--muted);line-height:1.65;margin:0}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .stat{padding:28px 20px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat b{font-size:31px;display:block}.stat span{font-size:12px;color:var(--muted)}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .work{min-height:430px;position:relative;overflow:hidden;background:var(--cream);display:flex;align-items:end;padding:22px;cursor:pointer}
+    .work:nth-child(1){background:linear-gradient(155deg,#d8c5b1,#80614d)}
+    .work:nth-child(2){background:linear-gradient(155deg,#d5d9d4,#777e78)}
+    .work:nth-child(3){background:linear-gradient(155deg,#e7d6cf,#a6786b)}
+    .work:nth-child(4){background:linear-gradient(155deg,#d7cdbd,#806f59)}
+    .work:nth-child(5){background:linear-gradient(155deg,#ded9cf,#8c8172)}
+    .work:nth-child(6){background:linear-gradient(155deg,#dfd0c4,#72594c)}
+    .work:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.72));opacity:.8}
+    .work-copy{position:relative;z-index:2;color:white}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.15em;opacity:.85}.work h3{font-family:"Playfair Display",serif;font-size:28px;font-weight:500;margin:7px 0}
+    .work small{font-size:11px;opacity:.85}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .service{background:var(--paper);padding:32px}.service b{font-size:16px}.service p{color:var(--muted);line-height:1.6;font-size:13px}
+    .about{background:var(--ink);color:white}.about .section-head p{color:#bcb5ae}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px}.about-copy{font-family:"Playfair Display",serif;font-size:42px;line-height:1.2}
+    .about-list{display:grid;gap:0}.about-list div{padding:19px 0;border-bottom:1px solid #3b3734;display:flex;justify-content:space-between;font-size:14px}.about-list span{color:#a8a09a}
+    .cta{padding:120px 0;text-align:center}.cta h2{font-family:"Playfair Display",serif;font-size:clamp(50px,7vw,86px);line-height:.95;font-weight:500;max-width:800px;margin:0 auto 28px}
+    .cta p{color:var(--muted);margin:0 auto 30px;max-width:520px;line-height:1.6}
+    footer{border-top:1px solid var(--line);padding:28px 0;display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+    .ig{font-weight:700;color:var(--ink)}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:55px 0}.hero-card{min-height:480px}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.work-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:35px}.services{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1160px)}section{padding:75px 0}.work-grid{grid-template-columns:1fr}.work{min-height:390px}h1{font-size:66px}.about-copy{font-size:34px}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap inner"><a class="logo" href="#">AYESHA HORI</a><div class="navlinks"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="ig" href="https://www.instagram.com/ayeshahori_official/" target="_blank" rel="noopener">Instagram ↗</a></div></nav>
+
+<header class="wrap hero">
+  <div>
+    <div class="eyebrow">Creator portfolio · Karachi, Pakistan</div>
+    <h1>Ayesha<br>Hori.</h1>
+    <p>Creating polished, relatable short-form content that helps brands get noticed — from lifestyle and food to fashion, beauty and UGC.</p>
+    <div class="actions"><a class="btn dark" href="#work">View selected work ↓</a><a class="btn" href="https://www.instagram.com/ayeshahori_official/" target="_blank" rel="noopener">View Instagram ↗</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="portrait-note"><strong>Lifestyle · Food · Fashion · UGC</strong><span>Available for Pakistani & international collaborations</span></div>
+  </div>
+</header>
+
+<main>
+<section class="wrap">
+  <div class="section-head"><h2>Built for<br>brand stories.</h2><p>Not just a sponsored post. The goal is content that feels native to social media, communicates the product quickly and gives people a reason to stop, watch and remember.</p></div>
+  <div class="stats">
+    <div class="stat"><b>31K+</b><span>Instagram followers*</span></div>
+    <div class="stat"><b>10K+</b><span>Example café Reel views*</span></div>
+    <div class="stat"><b>UGC</b><span>Brand-ready content</span></div>
+    <div class="stat"><b>PK · INTL</b><span>Collaboration-ready</span></div>
+  </div>
+</section>
+
+<section id="work" class="wrap">
+  <div class="section-head"><h2>Selected<br>content.</h2><p>Promotion-led work comes first. Lifestyle and personal content add personality without making the portfolio feel like a motherhood page.</p></div>
+  <div class="work-grid">
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Food · Promotion</span><h3>Café & dining features</h3><small>Experience-led reels · local discovery</small></div></a>
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Brand · UGC</span><h3>Product storytelling</h3><small>Hooks · demos · voiceover · CTA</small></div></a>
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Lifestyle · Fashion</span><h3>Styled integrations</h3><small>Natural product placement</small></div></a>
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Beauty · Lifestyle</span><h3>Everyday recommendations</h3><small>Relatable short-form content</small></div></a>
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Story · Campaign</span><h3>Launch & awareness</h3><small>Reels · stories · campaign packages</small></div></a>
+    <a class="work" href="https://www.instagram.com/ayeshahori_official/" target="_blank"><div class="work-copy"><span class="tag">Personal · Lifestyle</span><h3>Real-life moments</h3><small>Personality without losing polish</small></div></a>
+  </div>
+  <p style="font-size:11px;color:#8a827b;margin-top:15px">*Publicly indexed figures; replace with current Instagram Insights before publishing.</p>
+</section>
+
+<section id="services" class="wrap">
+  <div class="section-head"><h2>Ways we<br>can work.</h2><p>Flexible deliverables for brands, agencies, restaurants, e-commerce businesses and international teams.</p></div>
+  <div class="services">
+    <div class="service"><b>01 — Sponsored Reels</b><p>Native-feeling promotional Reels built around a clear hook, product message and call to action.</p></div>
+    <div class="service"><b>02 — UGC Content</b><p>Brand-owned videos for organic social, product pages and paid campaigns.</p></div>
+    <div class="service"><b>03 — Product Integration</b><p>Products naturally integrated into lifestyle, fashion, beauty or everyday content.</p></div>
+    <div class="service"><b>04 — Food & Venue Features</b><p>Café, restaurant, hospitality and experience-focused short-form content.</p></div>
+    <div class="service"><b>05 — Story Campaigns</b><p>Story sequences for launches, offers, awareness, links, polls and CTAs.</p></div>
+    <div class="service"><b>06 — Campaign Partnerships</b><p>Multi-deliverable creator campaigns for launches and ongoing brand storytelling.</p></div>
+  </div>
+</section>
+
+<section id="about" class="about"><div class="wrap">
+  <div class="section-head"><h2>About Ayesha.</h2><p>A creator-first approach with a strong understanding of what makes promotional content feel natural on social.</p></div>
+  <div class="about-grid">
+    <div class="about-copy">“The best brand content doesn't feel like an interruption. It feels like something you actually wanted to watch.”</div>
+    <div class="about-list">
+      <div><span>Based in</span><b>Karachi, Pakistan</b></div>
+      <div><span>Content</span><b>Reels · UGC · Stories · Photos</b></div>
+      <div><span>Core</span><b>Lifestyle · Food · Fashion</b></div>
+      <div><span>Also</span><b>Beauty · Family · Motherhood</b></div>
+      <div><span>Collabs</span><b>Pakistan + International</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="cta wrap">
+  <div class="eyebrow">Let's work together</div>
+  <h2>Have a product people should know about?</h2>
+  <p>Send the campaign brief, product details and desired deliverables. Let's create something people will actually want to watch.</p>
+  <div class="actions" style="justify-content:center"><a class="btn dark" href="https://www.instagram.com/ayeshahori_official/" target="_blank">DM on Instagram ↗</a><a class="btn" href="mailto:YOUR_EMAIL_HERE">Email for collaborations</a></div>
+</section>
+</main>
+
+<footer class="wrap"><span>© 2026 Ayesha Hori</span><a href="https://www.instagram.com/ayeshahori_official/" target="_blank">@ayeshahori_official ↗</a></footer>
+</body>
+</html>
